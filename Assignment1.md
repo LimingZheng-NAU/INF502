@@ -8,3 +8,5 @@ git branch
 git checkout
 
 git log --decorate
+
+git log --graph --all
