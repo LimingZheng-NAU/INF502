@@ -4,5 +4,7 @@ def calculate_this(operator, num1, num2):
 # Another file that will receive a line of code... at least.  
 
 git branch
+
 git checkout
+
 git log --decorate
