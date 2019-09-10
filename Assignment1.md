@@ -1,4 +1,5 @@
-1.Draw a diagram of the commits and branches in repository.
+# Part 1
+# 1.Draw a diagram of the commits and branches in repository.
 
 (base) LimingdeMacBook-Pro:handson limingzheng$ git branch
 * master
@@ -27,7 +28,7 @@ Date:   Wed Aug 14 23:08:47 2019 -0700
      Creating all files (all empty)
      
 
-2.Try git log --graph --all to see the commit tree. What do you see?
+# 2.Try git log --graph --all to see the commit tree. What do you see?
 
 (base) LimingdeMacBook-Pro:handson limingzheng$ git log --graph --all 
 * commit 18931d12a8be7cac049b73c6bc8136e9482f3371 (master)
@@ -55,52 +56,56 @@ Date:   Wed Aug 14 23:08:47 2019 -0700
        Creating all files (all empty)
 :
 
-3.Use git diff BRANCH_NAME to view the differences from a branch and the current branch. Summarize the difference from master to the other branch.
+# 3.Use git diff BRANCH_NAME to view the differences from a branch and the current branch. Summarize the difference from master to the other branch.
 
 In the master branch and math branch, there are both two files. But in the master branch, there is only one line code. 
 When we use git diff to view the other branch, it will show the different line code from the master branch, such as the calculate operator code. 
 
-4.Write a command sequence to merge the non-master branch into master
+# 4.Write a command sequence to merge the non-master branch into master
 
 git merge math
 
-5.Write a command (or sequence) to (i) create a new branch called math (from the master) and (ii) change to this branch
+# 5.Write a command (or sequence) to (i) create a new branch called math (from the master) and (ii) change to this branch
 
 git checkout -b math
 
 git checkout math
 
-6.Edit B.py adding the following source code below the content you have there
+# 6.Edit B.py adding the following source code below the content you have there
 
 print 'I know math, look:'
 print 2+2
 
-7.Write a command (or sequence) to commit your changes
+# 7.Write a command (or sequence) to commit your changes
 
 git add .
 
 git commit
 
-8.Change back to the master branch and change B.py adding the following source code (commit your change to master):
+# 8.Change back to the master branch and change B.py adding the following source code (commit your change to master):
 
 print 'hello world!'
 
-9.Write a command sequence to merge the math branch into master and describe what happened
+# 9.Write a command sequence to merge the math branch into master and describe what happened
 
 git merge math
 Auto-merging B.py
 CONFLICT (content): Merge conflict in B.py
 Automatic merge failed; fix conflicts and then commit the result.
 
-10.Write a set of commands to abort the merge
+# 10.Write a set of commands to abort the merge
 
 git merge --abort
 
-11.Now repeat item 9, but proceed with the manual merge (Editing B.py). All implemented methods are needed. Explain your procedure
+# 11.Now repeat item 9, but proceed with the manual merge (Editing B.py). All implemented methods are needed. Explain your procedure
 
 I use git mergetool to get in kdiff3 interface to change the code location to avoid conflict.
 
-12.Write a command (or set of commands) to proceed with the merge and make master branch up-to-date
+# 12.Write a command (or set of commands) to proceed with the merge and make master branch up-to-date
 
 git mergetool
 
+# Part 2
+# My experience of making this submission
+In this assignment, I followed the basic steps, first to fork the professor's repository, then use the terminal to clone to the local, link to the professor's repository, then create a file, enter the content of the paper I used, save it, create Branch, log in to my github, create a pull request, and upload successfully. The whole process was relatively smooth and did not encounter too many obstacles.
+This assignment helped me become familiar with how to use the pull request feature in github. And more familiar with the operating instructions at the terminal.
