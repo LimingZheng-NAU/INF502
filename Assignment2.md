@@ -1,4 +1,4 @@
-# 1. Write a function with the following signature: pythagoreanTheorem(length_a, length_b).
+1. Write a function with the following signature: pythagoreanTheorem(length_a, length_b).
     import math
     def pythagoreanTheorem(length_a, length_b):
         length_h = math.sqrt(pow(length_a,2) + pow(length_b,2))
@@ -11,11 +11,11 @@
     5.0
     6.4031242374328485
 
-# 2. Write a function with the following signature: list_mangler(list_in).
+2. Write a function with the following signature: list_mangler(list_in).
 
 
-# 3. Write a function with the following signature: grade_calc(grades_in, to_drop).
+3. Write a function with the following signature: grade_calc(grades_in, to_drop).
 
 
-# 4. Write a function with the following signature: odd_even_filter(numbers).
+4. Write a function with the following signature: odd_even_filter(numbers).
 
