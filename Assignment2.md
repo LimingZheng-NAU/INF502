@@ -6,6 +6,7 @@
     print(pythagoreanTheorem(2, 3))
     print(pythagoreanTheorem(3, 4))
     print(pythagoreanTheorem(4, 5))
+    
     3.605551275463989
     5.0
     6.4031242374328485
@@ -21,9 +22,11 @@
     print(list_mangler([1, 3, 5, 7]))
     print(list_mangler([2, 4, 6, 8]))
     print(list_mangler([11, 14, 17, 20]))
+    
     [3, 9, 15, 21]
     [4, 8, 12, 16]
     [33, 28, 51, 40]
+In the program, use the loop for traversing the array number, use if and else to determine whether each number is odd or even, then do the corresponding operation, and finally output the result.
 
 # 3. Write a function with the following signature: grade_calc(grades_in, to_drop).
 
