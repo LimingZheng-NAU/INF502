@@ -32,4 +32,26 @@ In the program, use the loop for traversing the array number, use if and else to
 
 
 # 4. Write a function with the following signature: odd_even_filter(numbers).
+    def odd_even_filter(numbers):
+        ev_li = []
+        od_li = []
+        for i in numbers:
+            if (i % 2 == 0):
+                ev_li.append(i)
+            else:
+                od_li.append(i)
+        print("Even lists:", ev_li)
+        print("Odd lists:", od_li)
+    numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    odd_even_filter(numbers)
+    numbers = [3, 9, 43, 7]
+    odd_even_filter(numbers)
+    numbers = [71, 39, 98, 79, 5, 89, 50, 90, 2, 56]
+    odd_even_filter(numbers)
 
+    Even lists: [2, 4, 6, 8]
+    Odd lists: [1, 3, 5, 7, 9]
+    Even lists: []
+    Odd lists: [3, 9, 43, 7]
+    Even lists: [98, 50, 90, 2, 56]
+    Odd lists: [71, 39, 79, 5, 89]
