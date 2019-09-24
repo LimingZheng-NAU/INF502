@@ -54,6 +54,9 @@
         else:
             print ("Invalid option. ")
 # Periodic Table
+    #PeriodicTable = {symbol, name, atomic number, row, and column}
+    import os
+
     PeriodicTable = {'H':['Hydrogen','1','1','1'],'He':['Helium','2','2','1'],'Li':['Lithium','3','2','1'],
                      'Be':['Berylium','4','2','2'],'B':['Boron','5','2','13'],'C':['Carbon','6','2','14'],
                      'N':['Nitrogen','7','2','15'],'O':['Oxygen','8','2','16'],'F':['Fluorine','9','2','17'],
@@ -64,5 +67,31 @@
 
     print(PeriodicTable)
 
-    key = input("Enter the symbol:")
-    print("name, atomic number, row, column:",PeriodicTable.get(key))
+    def print_main_window():
+        os.system('clear')
+        print("Choose an option as follows: ")
+        print("[1] Enter element's symbol:")
+        print("[2] Enter element's symbol property:")
+        print("[3] Enter new element's symbol:")
+        print("[4] Enter element's symbol to change the attributes of an element:")
+        print("[5] EXIT")
+
+    while (True):
+        print_main_window()
+        option = int(input("Your option: "))
+        os.system('clear')
+        if (option == 1):
+            key = input("Enter the symbol:")
+            print("name, atomic number, row, column:", PeriodicTable.get(key))
+            break
+        #elif (option == 2):
+            #print("The skinniest wallet has $",Skinniest(Wallets),"value in it")
+            #break
+        #elif (option == 3):
+            #print("All together, these wallets have $",Together(Wallets),"value in them")
+            #break
+        #elif (option == 4):
+            #print("All together, the total value of these wallets is worth $",Exchange(Wallets),"dimes")
+            #break
+        #else:
+            #print ("Invalid option. ")
