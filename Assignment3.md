@@ -84,9 +84,8 @@
             key = input("Enter the symbol:")
             print("name, atomic number, row, column:", PeriodicTable.get(key))
             break
-        #elif (option == 2):
-            #print("The skinniest wallet has $",Skinniest(Wallets),"value in it")
-            #break
+        elif (option == 2):
+            break
         elif (option == 3):
             NewSymbol = input("Enter new element's symbol:")
             Property = input("Enter new element's property:")
