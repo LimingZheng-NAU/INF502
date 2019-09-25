@@ -57,7 +57,7 @@
     #PeriodicTable = {symbol, name, atomic number, row, and column}
     import os
 
-    PeriodicTable = {'H':['Hydrogen','1','1','1'],'He':['Helium','2','2','1'],'Li':['Lithium','3','2','1'],
+    PeriodicTable = {'H':['Hydrogen','1','1','1'],'He':['Helium','2','1','18'],'Li':['Lithium','3','2','1'],
                      'Be':['Berylium','4','2','2'],'B':['Boron','5','2','13'],'C':['Carbon','6','2','14'],
                      'N':['Nitrogen','7','2','15'],'O':['Oxygen','8','2','16'],'F':['Fluorine','9','2','17'],
                      'Ne':['Neon','10','2','18'],'Na':['Sodium','11','3','1'],'Mg':['Magnesium','12','3','2'],
@@ -87,11 +87,17 @@
         #elif (option == 2):
             #print("The skinniest wallet has $",Skinniest(Wallets),"value in it")
             #break
-        #elif (option == 3):
-            #print("All together, these wallets have $",Together(Wallets),"value in them")
-            #break
-        #elif (option == 4):
-            #print("All together, the total value of these wallets is worth $",Exchange(Wallets),"dimes")
-            #break
-        #else:
-            #print ("Invalid option. ")
+        elif (option == 3):
+            NewSymbol = input("Enter new element's symbol:")
+            Property = input("Enter new element's property:")
+            PeriodicTable.setdefault(NewSymbol, []).append(Property)
+            print(PeriodicTable)
+            break
+        elif (option == 4):
+            NewSymbol = input("Enter element's symbol:")
+            Property = input("Enter the element's new property:")
+            PeriodicTable[NewSymbol] = Property
+            print(PeriodicTable)
+            break
+        elif (option == 5):
+            break
