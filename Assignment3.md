@@ -54,24 +54,34 @@
         else:
             print ("Invalid option. ")
 # Periodic Table
-    #PeriodicTable = {symbol, name, atomic number, row, and column}
-    import os
-
-    PeriodicTable = {'H':['Hydrogen','1','1','1'],'He':['Helium','2','1','18'],'Li':['Lithium','3','2','1'],
+    """
+    PeriodicTable = {symbol:[name, atomic number, row, and column]}
+    PeriodicTable: = {'H':['Hydrogen','1','1','1'],'He':['Helium','2','1','18'],'Li':['Lithium','3','2','1'],
                      'Be':['Berylium','4','2','2'],'B':['Boron','5','2','13'],'C':['Carbon','6','2','14'],
                      'N':['Nitrogen','7','2','15'],'O':['Oxygen','8','2','16'],'F':['Fluorine','9','2','17'],
                      'Ne':['Neon','10','2','18'],'Na':['Sodium','11','3','1'],'Mg':['Magnesium','12','3','2'],
                      'Al':['Aluminium','13','3','13'],'Si':['Silicon','14','3','14'],'P':['Phosphorus','15','3','15'],
                      'S':['Sulfur','16','3','16'],'Cl':['Chlorine','17','3','17'],'Ar':['Argon','18','3','18'],
                      'K':['Potassium','19','4','1'],'Ca':['Calcium','20','4','2']}
+    """
 
-    print(PeriodicTable)
+    import os
+
+    Symbol = ['H','He','Li','Be','B','C']
+    Name = ['Hydrogen','Helium','Lithium','Berylium','Boron','Carbon']
+    AtomicNumber = ['1','2','3','4','5','6']
+    Row = ['1','1','2','2','2','2']
+    Column = ['1','18','1','2','13','14']
+    PeriodicTable = {}
+    for i in range(0, len(Symbol)):
+        PeriodicTable[Symbol[i]] = [Name[i], AtomicNumber[i], Row[i], Column[i]]
+    print("PeriodicTable={'Symbol':['Name', 'Atomic_Number', 'Row', 'Column']}=",PeriodicTable)
 
     def print_main_window():
         os.system('clear')
         print("Choose an option as follows: ")
         print("[1] Enter element's symbol:")
-        print("[2] Enter element's symbol property:")
+        print("[2] Select Element's property:")
         print("[3] Enter new element's symbol:")
         print("[4] Enter element's symbol to change the attributes of an element:")
         print("[5] EXIT")
@@ -82,21 +92,42 @@
         os.system('clear')
         if (option == 1):
             key = input("Enter the symbol:")
-            print("name, atomic number, row, column:", PeriodicTable.get(key))
+            print("Name, Atomic_Number, Row, Column:", PeriodicTable.get(key))
             break
         elif (option == 2):
+            def print_window():
+                os.system('clear')
+                print("1.Name 2.Atomic_Number 3.Row 4.Column: ")
+                print("Choose an property number: ")
+            while (True):
+                print_window()
+                option = int(input("Your option: "))
+                os.system('clear')
+                if (option == 1):
+                    print(Name)
+                    break
+                elif (option == 2):
+                    print(AtomicNumber)
+                    break
+                elif (option == 3):
+                    print(Row)
+                    break
+                elif (option == 4):
+                    print(Column)
+                    break
             break
         elif (option == 3):
             NewSymbol = input("Enter new element's symbol:")
             Property = input("Enter new element's property:")
-            PeriodicTable.setdefault(NewSymbol, []).append(Property)
+            PeriodicTable.setdefault(NewSymbol,[]).append(Property)
             print(PeriodicTable)
             break
         elif (option == 4):
             NewSymbol = input("Enter element's symbol:")
-            Property = input("Enter the element's new property:")
+            property = input("Enter the element's new property:")
+            Property = property.split(',')
             PeriodicTable[NewSymbol] = Property
-            print(PeriodicTable)
+            print("PeriodicTable={'Symbol':['Name', 'Atomic_Number', 'Row', 'Column']}=",PeriodicTable)
             break
         elif (option == 5):
             break
