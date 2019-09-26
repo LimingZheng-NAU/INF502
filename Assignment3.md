@@ -46,7 +46,6 @@
             print("All together, these wallets have $",Together(Wallets),"value in them")
         elif (option == 4):
             print("All together, the total value of these wallets is worth $",Exchange(Wallets),"dimes")
-            break
         elif (option == 5):
             break
 # Periodic Table
