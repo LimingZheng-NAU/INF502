@@ -75,7 +75,7 @@
     PeriodicTable = {}
     for i in range(0, len(Symbol)):
         PeriodicTable[Symbol[i]] = [Name[i], AtomicNumber[i], Row[i], Column[i]]
-    print("PeriodicTable={'Symbol':['Name', 'Atomic_Number', 'Row', 'Column']}=",PeriodicTable)
+    print("PeriodicTable={'Symbol':['Name','Atomic_Number','Row','Column']}=",PeriodicTable)
 
     def print_main_window():
         os.system('clear')
@@ -104,30 +104,31 @@
                 option = int(input("Your option: "))
                 os.system('clear')
                 if (option == 1):
-                    print(Name)
+                    print("Name:",Name)
                     break
                 elif (option == 2):
-                    print(AtomicNumber)
+                    print("AtomicNumber:",AtomicNumber)
                     break
                 elif (option == 3):
-                    print(Row)
+                    print("Row:",Row)
                     break
                 elif (option == 4):
-                    print(Column)
+                    print("Column:",Column)
                     break
             break
         elif (option == 3):
             NewSymbol = input("Enter new element's symbol:")
-            Property = input("Enter new element's property:")
-            PeriodicTable.setdefault(NewSymbol,[]).append(Property)
-            print(PeriodicTable)
+            property = input("Enter new element's property=['Name','Atomic_Number','Row','Column']=")
+            Property = property.split(',')
+            PeriodicTable[NewSymbol] = Property
+            print("PeriodicTable={'Symbol':['Name','Atomic_Number','Row','Column']}=",PeriodicTable)
             break
         elif (option == 4):
             NewSymbol = input("Enter element's symbol:")
-            property = input("Enter the element's new property:")
+            property = input("Enter the element's new property=['Name','Atomic_Number','Row','Column']=:")
             Property = property.split(',')
             PeriodicTable[NewSymbol] = Property
-            print("PeriodicTable={'Symbol':['Name', 'Atomic_Number', 'Row', 'Column']}=",PeriodicTable)
+            print("PeriodicTable={'Symbol':['Name','Atomic_Number','Row','Column']}=",PeriodicTable)
             break
         elif (option == 5):
             break
