@@ -1,5 +1,4 @@
 # Wallets
-
     import os
 
     Wallets = {}
@@ -41,17 +40,14 @@
         os.system('clear')
         if (option == 1):
             print("The fattest wallet has $",Fattest(Wallets),"value in it")
-            break
         elif (option == 2):
             print("The skinniest wallet has $",Skinniest(Wallets),"value in it")
-            break
         elif (option == 3):
             print("All together, these wallets have $",Together(Wallets),"value in them")
-            break
         elif (option == 4):
             print("All together, the total value of these wallets is worth $",Exchange(Wallets),"dimes")
             break
-        else:
+        elif (option == 5):
             break
 # Periodic Table
     """
@@ -93,42 +89,40 @@
         if (option == 1):
             key = input("Enter the symbol:")
             print("Name, Atomic_Number, Row, Column:", PeriodicTable.get(key))
-            break
         elif (option == 2):
             def print_window():
                 os.system('clear')
-                print("1.Name 2.Atomic_Number 3.Row 4.Column: ")
                 print("Choose an property number: ")
+                print("[1] Name")
+                print("[2] Atomic Number")
+                print("[3] Row")
+                print("[4] Column")
+                print("[5] EXIT")
             while (True):
                 print_window()
                 option = int(input("Your option: "))
                 os.system('clear')
                 if (option == 1):
                     print("Name:",Name)
-                    break
                 elif (option == 2):
-                    print("AtomicNumber:",AtomicNumber)
-                    break
+                    print("Atomic Number:",AtomicNumber)
                 elif (option == 3):
                     print("Row:",Row)
-                    break
                 elif (option == 4):
                     print("Column:",Column)
+                elif (option == 5):
                     break
-            break
         elif (option == 3):
             NewSymbol = input("Enter new element's symbol:")
             property = input("Enter new element's property=['Name','Atomic_Number','Row','Column']=")
             Property = property.split(',')
             PeriodicTable[NewSymbol] = Property
             print("PeriodicTable={'Symbol':['Name','Atomic_Number','Row','Column']}=",PeriodicTable)
-            break
         elif (option == 4):
             NewSymbol = input("Enter element's symbol:")
             property = input("Enter the element's new property=['Name','Atomic_Number','Row','Column']=:")
             Property = property.split(',')
             PeriodicTable[NewSymbol] = Property
             print("PeriodicTable={'Symbol':['Name','Atomic_Number','Row','Column']}=",PeriodicTable)
-            break
         elif (option == 5):
             break
