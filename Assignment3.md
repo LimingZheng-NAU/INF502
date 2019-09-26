@@ -91,13 +91,13 @@
                 option = int(input("Your option: "))
                 os.system('clear')
                 if (option == 1):
-                    print("Name:",Name)
+                    print(Symbol,":Symbol Name are:",Name)
                 elif (option == 2):
-                    print("Atomic Number:",AtomicNumber)
+                    print(Symbol,":Symbol Atomic Number are:",AtomicNumber)
                 elif (option == 3):
-                    print("Row:",Row)
+                    print(Symbol,":Symbol Row are:",Row)
                 elif (option == 4):
-                    print("Column:",Column)
+                    print(Symbol,":Symbol Column are:",Column)
                 elif (option == 5):
                     break
         elif (option == 3):
