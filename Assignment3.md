@@ -50,17 +50,6 @@
         elif (option == 5):
             break
 # Periodic Table
-    """
-    PeriodicTable = {symbol:[name, atomic number, row, and column]}
-    PeriodicTable: = {'H':['Hydrogen','1','1','1'],'He':['Helium','2','1','18'],'Li':['Lithium','3','2','1'],
-                     'Be':['Berylium','4','2','2'],'B':['Boron','5','2','13'],'C':['Carbon','6','2','14'],
-                     'N':['Nitrogen','7','2','15'],'O':['Oxygen','8','2','16'],'F':['Fluorine','9','2','17'],
-                     'Ne':['Neon','10','2','18'],'Na':['Sodium','11','3','1'],'Mg':['Magnesium','12','3','2'],
-                     'Al':['Aluminium','13','3','13'],'Si':['Silicon','14','3','14'],'P':['Phosphorus','15','3','15'],
-                     'S':['Sulfur','16','3','16'],'Cl':['Chlorine','17','3','17'],'Ar':['Argon','18','3','18'],
-                     'K':['Potassium','19','4','1'],'Ca':['Calcium','20','4','2']}
-    """
-
     import os
 
     Symbol = ['H','He','Li','Be','B','C']
