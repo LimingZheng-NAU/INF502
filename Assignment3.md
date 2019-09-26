@@ -52,7 +52,7 @@
             print("All together, the total value of these wallets is worth $",Exchange(Wallets),"dimes")
             break
         else:
-            print ("Invalid option. ")
+            break
 # Periodic Table
     """
     PeriodicTable = {symbol:[name, atomic number, row, and column]}
