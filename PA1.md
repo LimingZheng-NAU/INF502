@@ -15,10 +15,6 @@
         DNA_SEQUENCE_13 = DNA_SEQUENCE_11
         DNA_SEQUENCE_24 = DNA_SEQUENCE_22
         if len(DNA_SEQUENCE_11) == len(DNA_SEQUENCE_22):
-            with open('DNA_SEQUENCE_1.txt', 'r') as f:
-                f.read()
-            with open('DNA_SEQUENCE_2.txt', 'r') as f:
-                f.read()
             with open('DNA_SEQUENCE_1.txt', 'w') as f:
                 f.write(DNA_SEQUENCE_11)
             with open('DNA_SEQUENCE_2.txt', 'w') as f:
@@ -51,19 +47,21 @@
                 break
 
         if score1 == score2:
+            print("Please look the Shift DNA_SEQUENCE 1 txt file and Shift DNA_SEQUENCE 2 txt file to check two DNA sequences")
             print("SEQUENCE_1->", DNA_SEQUENCE_15)
             print("SEQUENCE_2->", DNA_SEQUENCE_26)
             print("Max Score =", score1, ",Max Chain =", i11)
             print("SEQUENCE_1->", DNA_SEQUENCE_17)
             print("SEQUENCE_2->", DNA_SEQUENCE_28)
             print("Max Score =", score2, ",Max Chain =", i22)
-            with open('Shift DNA_SEQUENCE_1.txt', 'w') as f:
+            with open('Shift DNA_SEQUENCE 1.txt', 'w') as f:
                 f.writelines(DNA_SEQUENCE_15 + "\n")
                 f.writelines(DNA_SEQUENCE_26 + "\n")
-            with open('Shift DNA_SEQUENCE_2.txt', 'w') as f:
+            with open('Shift DNA_SEQUENCE 2.txt', 'w') as f:
                 f.writelines(DNA_SEQUENCE_17 + "\n")
                 f.writelines(DNA_SEQUENCE_28 + "\n")
         elif score1 > score2:
+            print("Please look the Shift DNA_SEQUENCE txt file to check two shift DNA sequences")
             print("SEQUENCE_1->", DNA_SEQUENCE_15)
             print("SEQUENCE_2->", DNA_SEQUENCE_26)
             print("Max Score =", score1, ",Max Chain =", i11)
@@ -71,6 +69,7 @@
                 f.writelines(DNA_SEQUENCE_15 + "\n")
                 f.writelines(DNA_SEQUENCE_26 + "\n")
         elif score2 > score1:
+            print("Please look the Shift DNA_SEQUENCE txt file to check two shift DNA sequences")
             print("SEQUENCE_1->", DNA_SEQUENCE_17)
             print("SEQUENCE_2->", DNA_SEQUENCE_28)
             print("Max Score =", score2, ",Max Chain =", i22)
