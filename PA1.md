@@ -47,7 +47,7 @@
                 break
 
         if score1 == score2:
-            print("Please look the Shift DNA_SEQUENCE 1 txt file and Shift DNA_SEQUENCE 2 txt file to check two DNA sequences")
+            print("Please look the Shift DNA_SEQUENCE 1 txt file and Shift DNA_SEQUENCE 2 txt file to check two DNA shift sequences")
             print("SEQUENCE_1->", DNA_SEQUENCE_15)
             print("SEQUENCE_2->", DNA_SEQUENCE_26)
             print("Max Score =", score1, ",Max Chain =", i11)
@@ -78,4 +78,4 @@
                 f.writelines(DNA_SEQUENCE_28 + "\n")
 
     except (TypeError):
-        print("Please input two same length of DNA sequence")
+        print("Please input two same length of DNA sequences")
