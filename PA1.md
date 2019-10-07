@@ -1,9 +1,9 @@
 # PA1
-    def compare(list1, list2):
+    def compare(str1, str2):
         score = 0
-        if len(list1) == len(list2):
-            for i in range(0, len(list1)):
-                if list1[i] == list2[i]:
+        if len(str1) == len(str2):
+            for i in range(0, len(str1)):
+                if str1[i] == str2[i]:
                     score += 1
                 else:
                     pass
