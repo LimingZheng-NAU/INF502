@@ -85,3 +85,41 @@ Description:
 
         except (TypeError):
             print("Please input two same length of DNA sequence")
+                    
+Example 1:  
+Enter the DNA Sequence 1: TGACAGATCGA  
+Enter the DNA Sequence 2: ACCGTAGCGAT  
+Result:  
+SEQUENCE_1-> TGACAGATCGA-  
+SEQUENCE_2-> -ACCGTAGCGAT  
+Max Score = 5   
+Shifting sequence 2 by 1  
+  
+Example 2:    
+Enter the DNA Sequence 1: TAACGAATTGC  
+Enter the DNA Sequence 2: GGCAGTCAGTC  
+Result:  
+SEQUENCE_1-> --TAACGAATTGC  
+SEQUENCE_2-> GGCAGTCAGTC--  
+Max Score = 3   
+Shifting sequence 1 by 2  
+SEQUENCE_1-> TAACGAATTGC---  
+SEQUENCE_2-> ---GGCAGTCAGTC  
+Max Score = 3   
+Shifting sequence 2 by 3  
+  
+Example 3:  
+Enter the DNA Sequence 1: GCCTACTTACG    
+Enter the DNA Sequence 2: AACGATCGGAT    
+Result:   
+SEQUENCE_1-> GCCTACTTACG---  
+SEQUENCE_2-> ---AACGATCGGAT  
+Max Score = 4   
+Shifting sequence 2 by 3  
+   
+Example 4:     
+Enter the DNA Sequence 1: ACTAGC   
+Enter the DNA Sequence 2: ACCGT   
+Result:   
+Please input two same length of DNA sequence
+
