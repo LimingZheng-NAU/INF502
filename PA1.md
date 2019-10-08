@@ -1,9 +1,12 @@
 # PA1
 Description: 
-* First of all, I first wrote a function to compare sequence similarity, that is, using a loop to traverse the strings separately to calculate how many letters in the two sequences are the same, that is, how many points there are.
-* Second, I set the user to input two sequences, write two DNA sequence files, and the following program to read.
-* Third, the movement of each DNA character sequence is realized by looping, and the previous comparison function is used to calculate the score for each movement, and the score obtained each time is compared to obtain the maximum value.
-* Finally, print out the two sequences after the maximum value is obtained, the maximum score and the number of shifts.Sets the exception handling when the lengths of the two DNA sequences entered are inconsistent.  
+
+        * First of all, I first wrote a function to compare sequence similarity, that is, using a loop to traverse the strings separately to calculate how many letters in the two sequences are the same, that is, how many points there are.
+        * Second, I set the user to input two sequences, write two DNA sequence files, and the following program to read.
+        * Third, the movement of each DNA character sequence is realized by looping, and the previous comparison function is used to calculate the score for each movement, and the score obtained each time is compared to obtain the maximum value.
+        * Finally, print out the two sequences after the maximum value is obtained, the maximum score and the number of shifts.Sets the exception handling when the lengths of the two DNA sequences entered are inconsistent. 
+   
+Code:
 
         def compare(str1, str2):
             score = 0
@@ -88,42 +91,44 @@ Description:
                     f.writelines(DNA_SEQUENCE_28 + "\n")
 
         except (TypeError):
-            print("Please input two same length of DNA sequence")
-                   
-Example 1:  
-Enter the DNA Sequence 1: TGACAGATCGA  
-Enter the DNA Sequence 2: ACCGTAGCGAT  
-Result:  
-SEQUENCE_1-> TGACAGATCGA-  
-SEQUENCE_2-> -ACCGTAGCGAT  
-Max Score = 5   
-Shifting sequence 2 by 1  
-  
-Example 2:    
-Enter the DNA Sequence 1: TACCGGCTA     
-Enter the DNA Sequence 2: AACGTAGCT      
-Result:  
-SEQUENCE_1-> ----TACCGGCTA   
-SEQUENCE_2-> AACGTAGCT----  
-Max Score = 3     
-Shifting sequence 1 by 4   
-SEQUENCE_1-> TACCGGCTA-   
-SEQUENCE_2-> -AACGTAGCT    
-Max Score = 3     
-Shifting sequence 2 by 1      
-  
-Example 3:  
-Enter the DNA Sequence 1: GCCTACTTACG    
-Enter the DNA Sequence 2: AACGATCGGAT    
-Result:   
-SEQUENCE_1-> GCCTACTTACG---  
-SEQUENCE_2-> ---AACGATCGGAT  
-Max Score = 4   
-Shifting sequence 2 by 3  
-   
-Example 4:     
-Enter the DNA Sequence 1: ACTAGC   
-Enter the DNA Sequence 2: ACCGT   
-Result:   
-Please input two same length of DNA sequence
+            print("Please input two same length of DNA sequence")  
+     
+Example:
+
+        Example 1:  
+        Enter the DNA Sequence 1: TGACAGATCGA  
+        Enter the DNA Sequence 2: ACCGTAGCGAT  
+        Result:  
+        SEQUENCE_1-> TGACAGATCGA-  
+        SEQUENCE_2-> -ACCGTAGCGAT  
+        Max Score = 5   
+        Shifting sequence 2 by 1  
+
+        Example 2:    
+        Enter the DNA Sequence 1: TACCGGCTA     
+        Enter the DNA Sequence 2: AACGTAGCT      
+        Result:  
+        SEQUENCE_1-> ----TACCGGCTA   
+        SEQUENCE_2-> AACGTAGCT----  
+        Max Score = 3     
+        Shifting sequence 1 by 4   
+        SEQUENCE_1-> TACCGGCTA-   
+        SEQUENCE_2-> -AACGTAGCT    
+        Max Score = 3     
+        Shifting sequence 2 by 1      
+
+        Example 3:  
+        Enter the DNA Sequence 1: GCCTACTTACG    
+        Enter the DNA Sequence 2: AACGATCGGAT    
+        Result:   
+        SEQUENCE_1-> GCCTACTTACG---  
+        SEQUENCE_2-> ---AACGATCGGAT  
+        Max Score = 4   
+        Shifting sequence 2 by 3  
+
+        Example 4:     
+        Enter the DNA Sequence 1: ACTAGC   
+        Enter the DNA Sequence 2: ACCGT   
+        Result:   
+        Please input two same length of DNA sequence
 
