@@ -3,7 +3,7 @@ Description:
 * First of all, I first wrote a function to compare sequence similarity, that is, using a loop to traverse the strings separately to calculate how many letters in the two sequences are the same, that is, how many points there are.
 * Second, I set the user to input two sequences, write two DNA sequence files, and the following program to read.
 * Third, the movement of each DNA character sequence is realized by looping, and the previous comparison function is used to calculate the score for each movement, and the score obtained each time is compared to obtain the maximum value.
-* Finally, print out the two sequences after the maximum value is obtained, the maximum score and the number of shifts.Sets the exception handling when the lengths of the two DNA sequences entered are inconsistent.
+* Finally, print out the two sequences after the maximum value is obtained, the maximum score and the number of shifts.Sets the exception handling when the lengths of the two DNA sequences entered are inconsistent.  
 
         def compare(str1, str2):
             score = 0
@@ -15,16 +15,20 @@ Description:
                         pass
                 return score
 
+        DNA_SEQUENCE_11 = input("Enter the DNA Sequence 1")
+        DNA_SEQUENCE_22 = input("Enter the DNA Sequence 2")
+        with open('DNA_SEQUENCE_1.txt', 'w') as f:
+            f.write(DNA_SEQUENCE_11)
+        with open('DNA_SEQUENCE_2.txt', 'w') as f:
+            f.write(DNA_SEQUENCE_22)
+
         try:
-            DNA_SEQUENCE_11 = input("Enter the DNA Sequence 1")
-            DNA_SEQUENCE_22 = input("Enter the DNA Sequence 2")
-            DNA_SEQUENCE_13 = DNA_SEQUENCE_11
-            DNA_SEQUENCE_24 = DNA_SEQUENCE_22
+
             if len(DNA_SEQUENCE_11) == len(DNA_SEQUENCE_22):
-                with open('DNA_SEQUENCE_1.txt', 'w') as f:
-                    f.write(DNA_SEQUENCE_11)
-                with open('DNA_SEQUENCE_2.txt', 'w') as f:
-                    f.write(DNA_SEQUENCE_24)
+                with open('DNA_SEQUENCE_1.txt', 'r') as f:
+                    DNA_SEQUENCE_13 = DNA_SEQUENCE_11 = f.read()
+                with open('DNA_SEQUENCE_2.txt', 'r') as f:
+                    DNA_SEQUENCE_24 = DNA_SEQUENCE_22 = f.read()
 
             score1 = 0
             for i1 in range(0,len(DNA_SEQUENCE_22)):
@@ -85,7 +89,7 @@ Description:
 
         except (TypeError):
             print("Please input two same length of DNA sequence")
-                    
+                   
 Example 1:  
 Enter the DNA Sequence 1: TGACAGATCGA  
 Enter the DNA Sequence 2: ACCGTAGCGAT  
