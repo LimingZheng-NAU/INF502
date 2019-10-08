@@ -62,10 +62,10 @@ Code:
                 print("Please look the Shift DNA_SEQUENCE 1 txt file and Shift DNA_SEQUENCE 2 txt file to check two shift DNA sequences")
                 print("SEQUENCE_1->", DNA_SEQUENCE_15)
                 print("SEQUENCE_2->", DNA_SEQUENCE_26)
-                print("Max Score =", score1, "\nShifting sequence 1 by", i11)
+                print("Score =", score1, "\nShifting sequence 1 by", i11)
                 print("SEQUENCE_1->", DNA_SEQUENCE_17)
                 print("SEQUENCE_2->", DNA_SEQUENCE_28)
-                print("Max Score =", score2, "\nShifting sequence 2 by", i22)
+                print("Score =", score2, "\nShifting sequence 2 by", i22)
                 with open('Shift DNA_SEQUENCE 1.txt', 'w') as f:
                     f.writelines(DNA_SEQUENCE_15 + "\n")
                     f.writelines(DNA_SEQUENCE_26 + "\n")
@@ -76,7 +76,7 @@ Code:
                 print("Please look the Shift DNA_SEQUENCE txt file to check two shift DNA sequences")
                 print("SEQUENCE_1->", DNA_SEQUENCE_15)
                 print("SEQUENCE_2->", DNA_SEQUENCE_26)
-                print("Max Score =", score1, "\nShifting sequence 1 by", i11)
+                print("Score =", score1, "\nShifting sequence 1 by", i11)
                 with open('Shift DNA_SEQUENCE.txt', 'w') as f:
                     f.writelines(DNA_SEQUENCE_15 + "\n")
                     f.writelines(DNA_SEQUENCE_26 + "\n")
@@ -84,7 +84,7 @@ Code:
                 print("Please look the Shift DNA_SEQUENCE txt file to check two shift DNA sequences")
                 print("SEQUENCE_1->", DNA_SEQUENCE_17)
                 print("SEQUENCE_2->", DNA_SEQUENCE_28)
-                print("Max Score =", score2, "\nShifting sequence 2 by", i22)
+                print("Score =", score2, "\nShifting sequence 2 by", i22)
                 with open('Shift DNA_SEQUENCE.txt', 'w') as f:
                     f.writelines(DNA_SEQUENCE_17 + "\n")
                     f.writelines(DNA_SEQUENCE_28 + "\n")
