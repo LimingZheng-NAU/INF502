@@ -1,10 +1,9 @@
 # PA1
 Description: 
-
-        * First of all, I first wrote a function to compare sequence similarity, that is, using a loop to traverse the strings separately to calculate how many letters in the two sequences are the same, that is, how many points there are.
-        * Second, I set the user to input two sequences, write two DNA sequence files, and the following program to read.
-        * Third, the movement of each DNA character sequence is realized by looping, and the previous comparison function is used to calculate the score for each movement, and the score obtained each time is compared to obtain the maximum value.
-        * Finally, print out the two sequences after the maximum value is obtained, the maximum score and the number of shifts.Sets the exception handling when the lengths of the two DNA sequences entered are inconsistent. 
+* First of all, I first wrote a function to compare sequence similarity, that is, using a loop to traverse the strings separately to calculate how many letters in the two sequences are the same, that is, how many points there are.
+* Second, I set the user to input two sequences, write two DNA sequence files, and the following program to read.
+* Third, the movement of each DNA character sequence is realized by looping, and the previous comparison function is used to calculate the score for each movement, and the score obtained each time is compared to obtain the maximum value.
+* Finally, print out the two sequences after the maximum value is obtained, the maximum score and the number of shifts.Sets the exception handling when the lengths of the two DNA sequences entered are inconsistent. 
    
 Code:
 
