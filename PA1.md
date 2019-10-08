@@ -96,17 +96,17 @@ Max Score = 5
 Shifting sequence 2 by 1  
   
 Example 2:    
-Enter the DNA Sequence 1: TAACGAATTGC  
-Enter the DNA Sequence 2: GGCAGTCAGTC  
+Enter the DNA Sequence 1: TACCGGCTA     
+Enter the DNA Sequence 2: AACGTAGCT      
 Result:  
-SEQUENCE_1-> --TAACGAATTGC  
-SEQUENCE_2-> GGCAGTCAGTC--  
-Max Score = 3   
-Shifting sequence 1 by 2  
-SEQUENCE_1-> TAACGAATTGC---  
-SEQUENCE_2-> ---GGCAGTCAGTC  
-Max Score = 3   
-Shifting sequence 2 by 3  
+SEQUENCE_1-> ----TACCGGCTA   
+SEQUENCE_2-> AACGTAGCT----  
+Max Score = 3     
+Shifting sequence 1 by 4   
+SEQUENCE_1-> TACCGGCTA-   
+SEQUENCE_2-> -AACGTAGCT    
+Max Score = 3     
+Shifting sequence 2 by 1      
   
 Example 3:  
 Enter the DNA Sequence 1: GCCTACTTACG    
