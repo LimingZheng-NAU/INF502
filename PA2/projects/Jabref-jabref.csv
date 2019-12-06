@@ -1,0 +1,275 @@
+title,number,body,state,created_at,closed_at,user,commits,additions,deletions,changed_files
+Upload to GitHub artifacts,5712,"According to https://help.github.com/en/actions/automating-your-workflow-with-github-actions/persisting-workflow-data-using-artifacts#uploading-build-and-test-artifacts one can store artifacts also on GitHub workflows. This PR tries that. If it succeeds, I can shut down builds.jabref.org.
+
+We already have that in - but IMHO at the wrong place.
+
+Download with 10 MB/s. All resulting files zipped.
+
+Background: Since our switch to github actions (https://github.com/JabRef/jabref/pull/5312), our upload to builds.jabref.org does not work reliably any more.",open,2019-12-04T20:55:25Z,,koppor,1,5,5,1
+Fix eclipse classpath build file,5711,"Add missing --add opens for controlsfx in eclipse classpath
+
+<!-- 
+Describe the changes you have made here: what, why, ... 
+Link issues by using the following pattern: #333.
+If you fixed a koppor issue, link it with following pattern: [koppor#47](https://github.com/koppor/jabref/issues/47).
+The title of the PR must not reference an issue, because GitHub does not support autolinking there.
+-->
+
+
+<!-- 
+- All items with `[ ]` are still a TODO.
+- All items checked with `[x]` are done.
+- Remove items not applicable
+-->
+
+- [ ] Change in CHANGELOG.md described (if applicable)
+- [ ] Tests created for changes (if applicable)
+- [ ] Manually tested changed features in running JabRef (always required)
+- [ ] Screenshots added in PR description (for bigger UI changes)
+- [ ] [Checked documentation](https://docs.jabref.org/): Is the information available and up to date? If not: Issue created at <https://github.com/JabRef/user-documentation/issues>.
+",closed,2019-12-04T20:40:49Z,2019-12-04T20:41:00Z,Siedlerchr,1,5,0,1
+incrementa validacoes para o campo year,5710,"- Verifica se o valor do campo year inicia com uma letra e se o ano é maior que ano atual.
+",closed,2019-12-04T15:43:37Z,2019-12-04T21:29:23Z,wandersonmn,1,13,0,1
+New Crowdin translations,5709,Enjoy!,closed,2019-12-04T10:24:04Z,2019-12-04T19:22:11Z,Siedlerchr,1,3,3,1
+"Revert ""Fix #5615 side pane not remembering position (#5629)""",5706,"This reverts commit 9ab537ffee59622b45631dab18286b3068edfc9a.
+
+I'm not sure how to proceed with this. Unfortunately, in #5629 (which fixes https://github.com/JabRef/jabref/issues/5615), a UI bug was introduced (at least for MacOs). The two screenshots show the problem:
+
+In the first screenshot everything is as in 5.0-alpha
+<img width=""1398"" alt=""Screen Shot 2019-12-03 at 13 54 35"" src=""https://user-images.githubusercontent.com/1254003/70052984-c9233800-15d4-11ea-9cfc-bc0df749695b.png"">
+
+From commit 9ab537ffee59622b45631dab18286b3068edfc9a (PR #5629) on, all the toolbar items are not shown anymore, unless you click on the icon with the two angle brackets (>>)
+<img width=""1394"" alt=""Screen Shot 2019-12-03 at 13 51 29"" src=""https://user-images.githubusercontent.com/1254003/70052985-c9bbce80-15d4-11ea-8368-ac24e8747958.png"">
+
+@Ka0o0 Do you have an alternative/better solution to the original problem https://github.com/JabRef/jabref/issues/5615?",open,2019-12-03T13:04:59Z,,LinusDietz,1,1,3,2
+Last Minute Changes 5.0-beta,5705,Let's see,closed,2019-12-03T11:20:24Z,2019-12-03T11:32:04Z,LinusDietz,30,899,674,48
+[WIP] Offer preview based on .bst file,5702,"JabRef has code to interpret `.bst` files. This PR enables a `.bst` file to be used at the entry preview.
+
+- Added BstPreviewLayout + tests
+
+TODO:
+
+- [ ] Integration in the available preview (cycle, ...)
+- [ ] Add `IEEEtran.bst` as the default offered preview
+- [ ] Enable user to select an arbitrary `.bst` file (maybe work for a future PR)",open,2019-12-02T23:00:24Z,,koppor,7,2761,238,24
+[WIP] Batch Insert entries,5691,"This is a work in progress, and I finally got it to compile. It's not tested, and I still have to turn `EntryAddedEvent` into `EntriesAddedEvent` and refactor the code to let it accept that. I also may have to change the SQL in `DBMSProcessor`. See #5659.
+
+<!-- 
+Describe the changes you have made here: what, why, ... 
+Link issues by using the following pattern: #333.
+If you fixed a koppor issue, link it with following pattern: [koppor#47](https://github.com/koppor/jabref/issues/47).
+The title of the PR must not reference an issue, because GitHub does not support autolinking there.
+-->
+
+
+<!-- 
+- All items with `[ ]` are still a TODO.
+- All items checked with `[x]` are done.
+- Remove items not applicable
+-->
+
+- [ ] Change in CHANGELOG.md described (if applicable)
+- [ ] Tests created for changes (if applicable)
+- [ ] Manually tested changed features in running JabRef (always required)
+- [ ] Screenshots added in PR description (for bigger UI changes)
+- [ ] [Checked documentation](https://docs.jabref.org/): Is the information available and up to date? If not: Issue created at <https://github.com/JabRef/user-documentation/issues>.
+",open,2019-12-02T01:03:28Z,,NorwayMaple,62,276,257,30
+Update JavaFX,5690,"Closes https://github.com/JabRef/jabref/issues/5689. (The other outdated dependencies should be found by dependabot,)
+
+<!-- 
+Describe the changes you have made here: what, why, ... 
+Link issues by using the following pattern: #333.
+If you fixed a koppor issue, link it with following pattern: [koppor#47](https://github.com/koppor/jabref/issues/47).
+The title of the PR must not reference an issue, because GitHub does not support autolinking there.
+-->
+
+
+<!-- 
+- All items with `[ ]` are still a TODO.
+- All items checked with `[x]` are done.
+- Remove items not applicable
+-->
+
+- [ ] Change in CHANGELOG.md described (if applicable)
+- [ ] Tests created for changes (if applicable)
+- [ ] Manually tested changed features in running JabRef (always required)
+- [ ] Screenshots added in PR description (for bigger UI changes)
+- [ ] [Checked documentation](https://docs.jabref.org/): Is the information available and up to date? If not: Issue created at <https://github.com/JabRef/user-documentation/issues>.
+",closed,2019-12-01T09:32:59Z,2019-12-01T10:09:17Z,tobiasdiez,1,1,1,1
+[WIP] Show merge entries for modified entries,5688,"First attempt for showing merge dialog in panel
+
+Not yet working
+
+Follow up from #5665 
+![grafik](https://user-images.githubusercontent.com/320228/69903469-eddf9b80-1399-11ea-9aed-26c2fa15b251.png)
+
+
+
+<!-- 
+Describe the changes you have made here: what, why, ... 
+Link issues by using the following pattern: #333.
+If you fixed a koppor issue, link it with following pattern: [koppor#47](https://github.com/koppor/jabref/issues/47).
+The title of the PR must not reference an issue, because GitHub does not support autolinking there.
+-->
+
+
+<!-- 
+- All items with `[ ]` are still a TODO.
+- All items checked with `[x]` are done.
+- Remove items not applicable
+-->
+
+- [ ] Change in CHANGELOG.md described (if applicable)
+- [ ] Tests created for changes (if applicable)
+- [ ] Manually tested changed features in running JabRef (always required)
+- [ ] Screenshots added in PR description (for bigger UI changes)
+- [ ] [Checked documentation](https://docs.jabref.org/): Is the information available and up to date? If not: Issue created at <https://github.com/JabRef/user-documentation/issues>.
+",open,2019-11-30T16:55:46Z,,Siedlerchr,3,32,95,6
+New Crowdin translations,5687,Enjoy!,closed,2019-11-30T09:02:30Z,2019-12-04T05:24:13Z,Siedlerchr,3,27,27,2
+Set dev to false on tag builds,5686,"<!-- 
+Describe the changes you have made here: what, why, ... 
+Link issues by using the following pattern: #333.
+If you fixed a koppor issue, link it with following pattern: [koppor#47](https://github.com/koppor/jabref/issues/47).
+The title of the PR must not reference an issue, because GitHub does not support autolinking there.
+-->
+
+
+<!-- 
+- All items with `[ ]` are still a TODO.
+- All items checked with `[x]` are done.
+- Remove items not applicable
+-->
+
+- [ ] Change in CHANGELOG.md described (if applicable)
+- [ ] Tests created for changes (if applicable)
+- [ ] Manually tested changed features in running JabRef (always required)
+- [ ] Screenshots added in PR description (for bigger UI changes)
+- [ ] [Checked documentation](https://docs.jabref.org/): Is the information available and up to date? If not: Issue created at <https://github.com/JabRef/user-documentation/issues>.
+",closed,2019-11-29T15:12:10Z,2019-11-29T15:12:27Z,stefan-kolb,1,2,2,1
+Update AUTHORS,5685,thanks @stefan-kolb ,closed,2019-11-29T13:44:31Z,2019-11-29T13:53:45Z,LinusDietz,1,45,0,1
+Release 5.0-beta,5684,:tada:,open,2019-11-29T13:35:22Z,,LinusDietz,10,3,48,1
+Enable oracle tests,5683,"Enable test on Oracle XE. Fixes https://github.com/koppor/jabref/issues/151.
+
+Oracle XE encrypted available at files.jabref.org. We have the password stored at koppor's KeePass and in the environment variable during the build. Thus, it can be decrypted during the test, but (hopefully) not by other persons.
+
+- Remove obsolete "";"" at SQL statement (ignored by non-Oracle-DB-systems)
+- create prepared statement
+- reformat code
+",closed,2019-11-28T21:10:59Z,2019-12-05T20:26:25Z,koppor,40,213,83,10
+Use GitVersion to increment build numbers,5682,"<!-- 
+Describe the changes you have made here: what, why, ... 
+Link issues by using the following pattern: #333.
+If you fixed a koppor issue, link it with following pattern: [koppor#47](https://github.com/koppor/jabref/issues/47).
+The title of the PR must not reference an issue, because GitHub does not support autolinking there.
+-->
+
+Fixes https://github.com/JabRef/jabref/issues/5399 and fixes https://github.com/JabRef/jabref/issues/5657.
+The following version information is automatically determined by GitVersion based on the current tags.
+
+|  Context      | Build version |  Build information |
+|---------------|---------------|--------------------|
+| PR            | 5.0.X         | 5.0-branch.Y       |
+| Master        | 5.0.X         |  5.0               |
+| After tag 5.1 | 5.1.X         |  5.1               |
+
+Here, `X` is the number of commits since the last tag; and `Y is the number of commits on this branch; and `branch` is the branch name. Build version is the version used in gradle, i.e. the one used to generate the installer. Build information is what is displayed in the about dialog.
+(Not sure if it really works on the master as it should; couldn't test it so far).
+
+It should also work with tags of the form `5.0-beta` (which have `build version = 5.0.X` and `build information = 5.0-beta`). Thus, this PR hopefully also solves the problems of  https://github.com/JabRef/jabref/pull/5684.
+
+<!-- 
+- All items with `[ ]` are still a TODO.
+- All items checked with `[x]` are done.
+- Remove items not applicable
+-->
+
+- [ ] Change in CHANGELOG.md described (if applicable)
+- [ ] Tests created for changes (if applicable)
+- [ ] Manually tested changed features in running JabRef (always required)
+- [ ] Screenshots added in PR description (for bigger UI changes)
+- [ ] [Checked documentation](https://docs.jabref.org/): Is the information available and up to date? If not: Issue created at <https://github.com/JabRef/user-documentation/issues>.
+",closed,2019-11-28T17:30:53Z,2019-12-04T11:43:54Z,tobiasdiez,29,25,48,3
+Add throttle to AutosaveUIManager,5680,"As discussed in #5679 there are a lot of save actions performed when autosave is turned on. This PR adds a timer which limits the save actions to one in 200ms which is especially handy when automated tasks like find and replace are performed.
+
+- [x] Change in CHANGELOG.md described (if applicable)
+- [x] Manually tested changed features in running JabRef (always required)
+",open,2019-11-27T23:41:49Z,,Ka0o0,2,17,16,2
+New Crowdin translations,5678,Enjoy!,closed,2019-11-27T09:00:31Z,2019-11-29T12:51:08Z,Siedlerchr,24,41,99,20
+Fix database tests and enable running using GitHub workflows,5676,"- fix behavior when no entries have to be inserted during a synch
+- fix database tests
+- have dbms test test only one database
+- DBMS to test is passed via environment variable ""DBMS"", defaulting to PostgreSQL
+- add shared information on Canonical BibTeX entry
+- some code improvement
+- have checkstyle running on github workflows (not on Travis)
+",closed,2019-11-26T23:27:34Z,2019-11-29T15:58:13Z,koppor,38,817,607,28
+[WIP] Fix fetcher tests,5674,"Fix some wrong data
+Fix help pages
+Use jsoup for parsing pre content in inspire fetcher
+
+
+
+
+<!-- 
+Describe the changes you have made here: what, why, ... 
+Link issues by using the following pattern: #333.
+If you fixed a koppor issue, link it with following pattern: [koppor#47](https://github.com/koppor/jabref/issues/47).
+The title of the PR must not reference an issue, because GitHub does not support autolinking there.
+-->
+
+
+<!-- 
+- All items with `[ ]` are still a TODO.
+- All items checked with `[x]` are done.
+- Remove items not applicable
+-->
+
+- [ ] Change in CHANGELOG.md described (if applicable)
+- [ ] Tests created for changes (if applicable)
+- [ ] Manually tested changed features in running JabRef (always required)
+- [ ] Screenshots added in PR description (for bigger UI changes)
+- [ ] [Checked documentation](https://docs.jabref.org/): Is the information available and up to date? If not: Issue created at <https://github.com/JabRef/user-documentation/issues>.
+",closed,2019-11-26T15:11:54Z,2019-11-29T15:42:12Z,Siedlerchr,13,75,46,16
+Fix copy drag and drop action,5671,"Fixes #5653.
+
+<!-- 
+Describe the changes you have made here: what, why, ... 
+Link issues by using the following pattern: #333.
+If you fixed a koppor issue, link it with following pattern: [koppor#47](https://github.com/koppor/jabref/issues/47).
+The title of the PR must not reference an issue, because GitHub does not support autolinking there.
+-->
+
+
+<!-- 
+- All items with `[ ]` are still a TODO.
+- All items checked with `[x]` are done.
+- Remove items not applicable
+-->
+
+- [x] Change in CHANGELOG.md described (if applicable)
+- [ ] Tests created for changes (if applicable)
+- [ ] Manually tested changed features in running JabRef (always required)
+- [ ] Screenshots added in PR description (for bigger UI changes)
+- [ ] [Checked documentation](https://docs.jabref.org/): Is the information available and up to date? If not: Issue created at <https://github.com/JabRef/user-documentation/issues>.
+",closed,2019-11-24T16:42:11Z,2019-11-24T17:25:15Z,tobiasdiez,1,4,2,2
+Improve column preference migration,5670,"<!-- 
+Describe the changes you have made here: what, why, ... 
+Link issues by using the following pattern: #333.
+If you fixed a koppor issue, link it with following pattern: [koppor#47](https://github.com/koppor/jabref/issues/47).
+The title of the PR must not reference an issue, because GitHub does not support autolinking there.
+-->
+
+Fixes #5661.
+
+<!-- 
+- All items with `[ ]` are still a TODO.
+- All items checked with `[x]` are done.
+- Remove items not applicable
+-->
+
+- [ ] Change in CHANGELOG.md described (if applicable)
+- [ ] Tests created for changes (if applicable)
+- [ ] Manually tested changed features in running JabRef (always required)
+- [ ] Screenshots added in PR description (for bigger UI changes)
+- [ ] [Checked documentation](https://docs.jabref.org/): Is the information available and up to date? If not: Issue created at <https://github.com/JabRef/user-documentation/issues>.
+",closed,2019-11-24T12:10:04Z,2019-11-27T19:46:23Z,tobiasdiez,1,78,34,4
